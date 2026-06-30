@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Edwin Kihiuria — Computer Science student and aspiring software developer." />
+  <title>Edwin Kihiuria — Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav id="nav_menu" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#home">EK</a>
+      <div class="nav-links">
+        <a href="#home"     class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <header id="home" class="hero">
+    <div class="hero-inner">
+      <img class="avatar" src="Avatar.PNG" alt="Photo of Edwin Kihiuria" />
+
+      <div class="hero-label">Open to opportunities</div>
+
+      <h1 class="hero-name">Edwin<br><em>Kihiuria</em></h1>
+
+      <p class="hero-role">
+        <span class="role-prefix">CS Student &amp;</span>
+        <span id="roleCycle">Software Developer</span>
+      </p>
+
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="resume_edwin_kihiuria.pdf" target="_blank" rel="noopener">
+          Download Résumé
+        </a>
+        <a class="btn btn-ghost" href="#projects">View Projects</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">scroll</div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-label">01 — About</div>
+      <h2 class="section-title">Who I <em>Am</em></h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm pursuing a Bachelor's in Computer Science, driven by a genuine love of
+            building things that work elegantly. I care about clean code, thoughtful
+            problem-solving, and creating software that actually makes a difference.
+          </p>
+          <p>
+            I'm always exploring new areas of tech — whether that's systems programming,
+            game development, or web work — and I'm eager to collaborate on meaningful
+            projects as I grow.
+          </p>
+          <p>
+            When I step away from the keyboard, you'll find me burried in a novel or at the gym.
+          </p>
+        </div>
+
+        <div class="skills-block">
+          <h3>Skills</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-label">02 — Projects</div>
+      <h2 class="section-title">Selected <em>Work</em></h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="card-img-wrap">
+            <img
+              src="Asteroid_Game.png"
+              alt="Unity Asteroid Shooter Game screenshot"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-body">
+            <div class="card-tech">C# · Unity</div>
+            <h3>Asteroid Shooter</h3>
+            <p>2D shooter with player controls, enemy spawning and collision systems. Includes PlayerController, BulletController, and GameController.</p>
+            <a class="card-link" href="#">View project →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-img-wrap">
+            <img
+              src="Game_2.png"
+              alt="3D Isometric Roguelike Game screenshot"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-body">
+            <div class="card-tech">C# · Unity 3D</div>
+            <h3>Isometric Roguelike</h3>
+            <p>Built a 3D isometric roguelike with player combat, enemy AI, projectiles and progression. Used object pooling and animation-driven combat.</p>
+            <a class="card-link" href="#">View project →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-img-wrap">
+            <img
+              src="Jarvis.png"
+              alt="Local LLM Automation Assistant screenshot"
+              loading="lazy"
+            />
+          </div>
+          <div class="card-body">
+            <div class="card-tech">Ollama · Automation</div>
+            <h3>Local LLM Assistant</h3>
+            <p>Integrated local large language models with Ollama API for offline AI workflows. Built modular architecture for voice, memory, and future automation support.</p>
+            <a class="card-link" href="#">View project →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section-label">03 — Contact</div>
+      <h2 class="section-title">Get In <em>Touch</em></h2>
+
+      <p class="contact-intro">
+        Have a project idea, a question, or just want to connect? I'd love to hear from you.
+      </p>
+
+      <form
+        class="contact-form"
+        action="mailto:edwink226@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" required placeholder="Your name" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="your@email.com" autocomplete="email" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="What's on your mind?"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+
+      <div class="contact-links">
+        <a href="mailto:edwink226@gmail.com">edwink226@gmail.com</a>
+        <span class="dot">·</span>
+        <a href="https://www.linkedin.com/in/edwin-kihiuria-bb431b287/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span class="footer-left">Edwin Kihiuria</span>
+    <span class="footer-right">©2025 — Built with care</span>
+  </footer>
+
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script>
+    (function () {
+      /* ── Scroll progress bar ── */
+      const bar = document.getElementById('progress-bar');
+      function updateBar() {
+        const scrolled = window.scrollY;
+        const total    = document.body.scrollHeight - window.innerHeight;
+        bar.style.width = (total > 0 ? (scrolled / total) * 100 : 0) + '%';
+      }
+
+      /* ── Nav shadow on scroll ── */
+      const nav = document.getElementById('nav_menu');
+      function updateNav() {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+      }
+
+      window.addEventListener('scroll', () => {
+        updateBar();
+        updateNav();
+      }, { passive: true });
+
+      /* ── Active nav link via IntersectionObserver ── */
+      const sections  = document.querySelectorAll('[id]');
+      const navLinks  = document.querySelectorAll('.nav-links a');
+
+      const sectionObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            navLinks.forEach(a => a.classList.remove('active'));
+            const link = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+            if (link) link.classList.add('active');
+          }
+        });
+      }, { threshold: 0.35 });
+
+      sections.forEach(s => sectionObs.observe(s));
+
+      /* ── Fade-in on scroll ── */
+      const fadeTargets = document.querySelectorAll('.section, .project-card');
+      const fadeObs = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            // Stagger cards slightly
+            const delay = entry.target.classList.contains('project-card') ? i * 80 : 0;
+            setTimeout(() => entry.target.classList.add('visible'), delay);
+            fadeObs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08 });
+
+      fadeTargets.forEach(el => fadeObs.observe(el));
+
+      /* ── Rotating hero role text ── */
+      const roles  = ['Software Developer', 'Problem Solver', 'Creative Coder', 'Lifelong Learner'];
+      const roleEl = document.getElementById('roleCycle');
+      let   ri     = 0;
+
+      setInterval(() => {
+        roleEl.classList.add('fade-out');
+        setTimeout(() => {
+          ri = (ri + 1) % roles.length;
+          roleEl.textContent = roles[ri];
+          roleEl.classList.remove('fade-out');
+        }, 300);
+      }, 2800);
+    })();
+  </script>
+
+</body>
+</html>
