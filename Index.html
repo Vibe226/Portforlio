@@ -162,12 +162,7 @@
         Have a project idea, a question, or just want to connect? I'd love to hear from you.
       </p>
 
-      <form
-        class="contact-form"
-        action="mailto:edwink226@gmail.com"
-        method="post"
-        enctype="text/plain"
-      >
+      <form class="contact-form" id="contactForm">
         <div class="form-row">
           <div class="form-group">
             <label for="name">Name</label>
@@ -269,6 +264,34 @@
           roleEl.classList.remove('fade-out');
         }, 300);
       }, 2800);
+
+      const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async (e) => {
+
+    e.preventDefault();
+
+    const data = {
+        name: form.name.value,
+        email: form.email.value,
+        message: form.message.value
+    };
+
+    const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+        alert("Message sent successfully!");
+        form.reset();
+    } else {
+        alert("Something went wrong.");
+    }
+});
     })();
   </script>
 
